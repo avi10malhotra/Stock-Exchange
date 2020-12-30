@@ -1,6 +1,6 @@
 # Stock Exchange website
 Designed a web-app which enables users to virtually buy and sell stocks. The app uses real world stock pricing from Yahoo Finance.
-<br>
+<br><br>
 "CS50 Finance", a problem set from the HarvardX CS50 course, provides the foundation code for this project. For more information, click [here](https://docs.cs50.net/problems/finance/finance.html). If you to wish to view the model solution, click [here](https://finance.cs50.net/login).
 ## Background
 This web-app allows one to manage portfolios of stocks, including features that allow users to hypothetically 'buy' and 'sell' stocks. 
