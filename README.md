@@ -19,10 +19,12 @@ A helper file provided with the problem set material that defines some functions
 ### application.py
 The backbone of the Stock Exchange website. It uses [Flask](http://flask.pocoo.org/),  such that it allows storing user sessions on the local filesystem. Moreover, this file is also primarily responsible for making amendments to **finance.db**. This file defines the following routes:
 
- - Register:
- - Quote:
- - Buy:
- - Index:
- - Sell:
- - History:
- - Password update: 
+ - Register: _inserts_ the user into the **users** table post authenticated sign up, and sets up the 'register.html' template.
+ - Quote: Takes the stock symbol as input such that when the user instantiates the GET request, the 'quote.html' and 'quoted.html' templates are rendered. 
+ - Buy: Looks up the stock price and the user portfolio in **users**. This route also implements the commands responsible for storing user transactions in **finance.db**. 
+ - Index: Performs a lookup for each stock and returns a summary of the user porftilio, including user info, stocks owned, shares owned, stock price, and net balance.
+ - Sell: Sells shares of stock and updates user's portfolio.
+ - History: Returns all buy/sell transcations done by the user
+ - Password update: The "additional feature" of this problem set that allows a users to change their passwords. 
+<br><br>
+Note that all of the aforementioned routes perform error checking and render apologies as needed.
