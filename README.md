@@ -1,7 +1,7 @@
 # Stock Exchange website
 Designed a web-app which enables users to virtually buy and sell stocks. The app uses real world stock pricing from Yahoo Finance.
 <br><br>
-"CS50 Finance", a problem set from the HarvardX CS50 course, provides the foundation code for this project. For more information, click [here](https://docs.cs50.net/problems/finance/finance.html). If you to wish to view the model solution, click [here](https://finance.cs50.net/login).
+"CS50 Finance", a problem set from the HarvardX CS50 course, provides the foundation code for this project. For more information, click [here](https://docs.cs50.net/problems/finance/finance.html). If you wish to view the model solution, click [here](https://finance.cs50.net/login).
 ## Background
 This web-app allows one to manage portfolios of stocks, including features that allow users to hypothetically 'buy' and 'sell' stocks. 
 <br><br>
@@ -9,7 +9,7 @@ The prices of these stocks are queried via [Yahoo Finance](http://finance.yahoo.
 
 ## Project Files
 ### static/
-This folder contains only one file, **styles.css** which render the default styling for the web app. 
+This folder contains only one file, **styles.css** which renders the default styling for the web app. 
 ### templates/
 All files in this folder are HTML markups that have been stylised with [**Bootstrap**](https://getbootstrap.com/), a front-end open source toolkit that provides incredibly responsive JavaScript plugins. All of these templates are rendered and called from **application.py**,  thereby allowing relaying of messages from different routes and flashing the said messages to the user. 
 ### finance. db
@@ -24,7 +24,7 @@ The backbone of the Stock Exchange website. It uses [Flask](http://flask.pocoo.o
  - Buy: Looks up the stock price and the user portfolio in **users**. This route also implements the commands responsible for storing user transactions in **finance.db**. 
  - Index: Performs a lookup for each stock and returns a summary of the user porftilio, including user info, stocks owned, shares owned, stock price, and net balance.
  - Sell: Sells shares of stock and updates user's portfolio.
- - History: Returns all buy/sell transcations done by the user
+ - History: Returns all buy/sell transcations done by the user.
  - Password update: The "additional feature" of this problem set that allows a users to change their passwords. 
 <br><br>
 Note that all of the aforementioned routes perform error checking and render apologies as needed.
